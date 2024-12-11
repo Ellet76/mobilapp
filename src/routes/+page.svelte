@@ -4,7 +4,7 @@
 
 <p>{data.clicks}</p>
 
-<button on:click={async () => {const result = await fetch("/", {method: "POST",}); 
+<button on:click={async () => {const result = await fetch("https://mobilapp.onrender.com", {method: "POST",}); 
 const json = await result.json();
 data.clicks = json.clicks;}}>click</button>
 
